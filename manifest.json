@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "chien-wen-mosquito",
+  "description": "chrome extension for chien-wen mosquito",
+  "author": "Eli",
+  "icons": {
+    "128": "images/icon_128.png"
+  },
+  "version": "0.0.1",
+  "web_accessible_resources": [
+    {
+      "resources": ["/images/*"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
+  "action": {
+    "default_title": "看什麼看？沒看過帥哥阿？"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/index.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ]
+}
